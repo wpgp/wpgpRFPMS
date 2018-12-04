@@ -7,7 +7,7 @@
 ##  rfg.input.countries <- c("BTN","NPL")
 ##  rfg.input.countries <- c("ARM", "GEO", "AZE")
 
-rfg.input.countries <- c("BTN")
+rfg.input.countries <- c("NPL")
 
 ##  If you are using specific Population tables, i.e. non-standard, stored 
 ##  locally, declare their paths here. Otherwise, the script will source the 

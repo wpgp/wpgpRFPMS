@@ -35,7 +35,7 @@ rm(list=ls(all=TRUE))
 
 
 ##  Set the root path (directory this script should be located in):
-root_path = "E:\\WorldPop\\RF_NEW"
+root_path = "E:\\WP_packages\\wpgpRFPMS"
 
 
 #####
