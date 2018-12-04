@@ -17,7 +17,7 @@ get_ftp_description <- function(cvr){
     
     df <- get_ftp_ListCountryCovariates(ISO3 = ISO3)
   
-    return(paste0("<a href='ftp://ftp.worldpop.org.uk/GIS/Covariates/Global_2000_2020/'>","ftp://ftp.worldpop.org.uk/WP515640_Global/",Covariate,"</a>"))
+    return(paste0("<a href='ftp://ftp.worldpop.org.uk/GIS/Covariates/Global_2000_2020/'>","ftp://ftp.worldpop.org.uk/GIS/Covariates/Global_2000_2020/</a>"))
     
   }
 }
@@ -290,6 +290,9 @@ cat("<div class='container'>
     *Stevens, F. R., Gaughan, A. E., Linard, C. & Tatem, A. J. Disaggregating Census Data for Population Mapping Using Random Forests with Remotely-Sensed and Ancillary Data. PLoS ONE 10, e0107042 (2015).
     <br/>
     <a href='https://esa.un.org/unpd/wpp/Download/Standard/Population/'>https://esa.un.org/unpd/wpp/Download/Standard/Population/</a>
+   <br/><br/>
+   <b></b>
+    WorldPop (www.worldpop.org - School of Geography and Environmental Science, University of Southampton; Department of Geography and Geosciences, University of Louisville; Departement de Geographie, Universite de Namur) and Center for International Earth Science Information Network (CIESIN), Columbia University (2018). Global High Resolution Population Denominators Project - Funded by The Bill and Melinda Gates Foundation (OPP1134076). https://dx.doi.org/10.5258/SOTON/10.5258/SOTON/WP00644
     </div>
     </div>
     </div> <!-- /container -->\n")
