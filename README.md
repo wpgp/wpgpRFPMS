@@ -20,6 +20,7 @@ WorldPop (www.worldpop.org - School of Geography and Environmental Science, Univ
 https://doi.org/10.1371/journal.pone.0107042</a>.
 
 **Suggested citation:** 
+
 Maksym Bondarenko, Jeremiah J. Nieves,  Alessandro Sorichetta, Forrest R Stevens, Andrea E. Gaughan, and Andrew J. Tatem  2020. wpgpRFPMS: Random Forests population modelling R scripts, version 0.1.0. University of Southampton: Southampton, UK. doi:<a href="https://dx.doi.org/10.5258/SOTON/WP00665" target="_blank">10.5258/SOTON/WP00665</a>. 
 
 ## License
