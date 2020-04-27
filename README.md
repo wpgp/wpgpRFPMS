@@ -19,7 +19,7 @@ All census data, zonal stats and covariates for 249 countries are stored on [Wor
 WorldPop (www.worldpop.org - School of Geography and Environmental Science, University of Southampton; Department of Geography and Geosciences, University of Louisville; Departement de Geographie, Universite de Namur) and Center for International Earth Science Information Network (CIESIN), Columbia University (2018) in the framework of Global High Resolution Population Denominators Project - Funded by The Bill and Melinda Gates Foundation (OPP1134076). More about the method in https://doi.org/10.1371/journal.pone.0107042. The WorldPop Random Forests population modelling R scripts (wpgpRFPMS) was developed by Maksym Bondarenko and Jeremiah Nieves. Input data have been contributed by many different researchers within the WorldPop Research Group. Information and sources of the input population data are <a href="https://www.worldpop.org/resources/docs/national_boundaries/global-input-population-data-summary.xlsx" target="_blank" title="input population data" >available here</a>. Read more about the method in <a href="https://doi.org/10.1371/journal.pone.0107042">
 https://doi.org/10.1371/journal.pone.0107042</a>.
 
-**Suggested citation:** 
+**Suggested citation:**  
 Maksym Bondarenko, Jeremiah J. Nieves,  Alessandro Sorichetta, Forrest R Stevens, Andrea E. Gaughan, and Andrew J. Tatem  2020. wpgpRFPMS: Random Forests population modelling R scripts, version 0.1.0. University of Southampton: Southampton, UK. doi:<a href="https://dx.doi.org/10.5258/SOTON/WP00665" target="_blank">10.5258/SOTON/WP00665</a>. 
 
 ## License
