@@ -1,6 +1,6 @@
 # wpgpRFPMS : Random Forests population modelling scripts 
 
-[![N|Solid](http://maps.worldpop.org.uk/img/worldpop-logo.png)](http://maps.worldpop.org.uk)
+
 
 # Introduction
 wpgpRFPMS is a population modelling R script utilizing Random Forests to inform a dasymetric redistribution of census-based population count data. Read more about the method in [https://doi.org/10.1371/journal.pone.0107042](https://doi.org/10.1371/journal.pone.0107042) 
