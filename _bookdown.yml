@@ -1,5 +1,5 @@
 new_session: FALSE
-output_dir: "docs"
+output_dir: "_book"
 delete_merged_file: TRUE
 rmd_files: [
   "README.md",
