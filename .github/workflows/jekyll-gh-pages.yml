@@ -21,8 +21,8 @@ jobs:
         run: Rscript -e 'bookdown::render_book("README.md")'
       - uses: actions/upload-artifact@v2
         with:
-          name: _book
-          path: _book/
+          name: _site
+          path: _site/
 
 
   # Deployment job
@@ -36,13 +36,14 @@ jobs:
        uses: actions/download-artifact@v1.0.0
        with:
          # Artifact name
-         name: _book # optional
+         name: _site # optional
          # Destination path
-         path: _book # optional
-         build_dir: _book
+         path: _site # optional
+         build_dir: _site
          target_branch: gh-pages
      - name: Deploy to GitHub Pages
+       uses: Cecilapp/GitHub-Pages-deploy@v3
        env:
           EMAIL: ${{ secrets.EMAIL }}               # must be a verified email
           GH_TOKEN: ${{ secrets.GH_PAT }} # https://github.com/settings/tokens
-          BUILD_DIR: _book/                     # "_site/" by default
+          BUILD_DIR: _site/                     # "_site/" by default
