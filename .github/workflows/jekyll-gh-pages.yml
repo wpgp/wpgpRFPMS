@@ -17,6 +17,8 @@ jobs:
       - uses: r-lib/actions/setup-pandoc@v2
       - name: Install rmarkdown
         run: Rscript -e 'install.packages(c("rmarkdown","bookdown"))'
+      - name: Crete Dir
+        run: mkdir -p _site       
       - name: Render Book
         run: Rscript -e 'bookdown::render_book("README.md")'
       - uses: actions/upload-artifact@v4
@@ -39,8 +41,6 @@ jobs:
          name: _site # optional
          # Destination path
          path: _site # optional
-         build_dir: _site
-         target_branch: gh-pages
      - name: Deploy to GitHub Pages
        uses: Cecilapp/GitHub-Pages-deploy@v3
        env:
