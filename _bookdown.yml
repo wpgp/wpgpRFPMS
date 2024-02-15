@@ -4,7 +4,7 @@ delete_merged_file: TRUE
 rmd_files: [
   "README.md",
 
-  "doc/AdminID.md"
+  "docs/AdminID.md"
 
 
 ]
