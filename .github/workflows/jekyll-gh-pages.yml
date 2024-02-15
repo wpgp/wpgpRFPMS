@@ -35,17 +35,12 @@ jobs:
      - name: Checkout
        uses: actions/checkout@master
      - name: Download artifact
-       uses: actions/download-artifact@v4
+       uses: actions/download-artifact@v1.0.0
        with:
-         # Artifact name
-         name: _book # optional
-         # Destination path
-         path: _book # optional
-     - name: Crete Dir
-       run: mkdir -p _site           
+         name: _book 
+         path: _book
+     - run: zip -r _book.zip _site/	
+     - uses: ncipollo/release-action@v1	 
      - name: Deploy to GitHub Pages
-       uses: Cecilapp/GitHub-Pages-deploy@v3
-       env:
-          EMAIL: ${{ secrets.EMAIL }}               # must be a verified email
-          GH_TOKEN: ${{ secrets.GH_PAT }} # https://github.com/settings/tokens
-          BUILD_DIR: _site/                     # "_site/" by default
+       id: deployment
+       uses: actions/deploy-pages@v4
