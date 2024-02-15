@@ -1,0 +1,11 @@
+new_session: FALSE
+output_dir: "docs"
+delete_merged_file: TRUE
+before_chapter_script: "before-chapter.R"
+rmd_files: [
+  "README.md",
+
+  "doc/AdminID.md"
+
+
+]
