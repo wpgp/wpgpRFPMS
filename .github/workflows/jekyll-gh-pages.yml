@@ -18,13 +18,13 @@ jobs:
       - name: Install rmarkdown
         run: Rscript -e 'install.packages(c("rmarkdown","bookdown"))'
       - name: Crete Dir
-        run: mkdir -p _site       
+        run: mkdir -p _book      
       - name: Render Book
         run: Rscript -e 'bookdown::render_book("README.md")'
       - uses: actions/upload-artifact@v4
         with:
-          name: _site
-          path: _site/
+          name: _book
+          path: _book/
 
 
   # Deployment job
@@ -38,9 +38,11 @@ jobs:
        uses: actions/download-artifact@v4
        with:
          # Artifact name
-         name: _site # optional
+         name: _book # optional
          # Destination path
-         path: _site # optional
+         path: _book # optional
+     - name: Crete Dir
+       run: mkdir -p _site           
      - name: Deploy to GitHub Pages
        uses: Cecilapp/GitHub-Pages-deploy@v3
        env:
